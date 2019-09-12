@@ -1,0 +1,118 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+.app {
+    width: 800px;
+    height: 600px;
+    background-color:#000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: #FFD700 5px solid;
+
+}
+.app .panel {
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #FFD700;
+    color: #000;
+    font-size: 12pt;
+    z-index: 1;
+}
+.score {
+     font-size: 1.3em;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: auto 10px auto auto;
+}
+.score::before {
+    content: "Score: ";
+}
+.panel h2 {
+    position: absolute;
+    align-content: center;
+    display: flex;
+    float: left;
+    top: 25%;
+    margin: auto;
+    padding-left: 10px;
+    padding: auto;
+    z-index: 2;
+}
+.panel .timer {
+    font-size: 1.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.app .arena {
+    top: 50px;
+    position: absolute;
+    height: 550px;
+    width: 800px;
+    margin: auto;
+}
+.app .arena div {
+    background-color: #fff;
+    /* border: 1px #4C4C47 solid; */
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.point {
+    background-color: #4C4C47 !important;
+}
+.redPoint {
+    background-color: #FF0000 !important;
+}
+.snake {
+    background-color: #4C4C47 !important;
+}
+#gameOverWindow {
+    position: fixed;
+    width: 800px;
+    height: 550px;
+    background-color:#4C4C47cc;
+    display: none;
+}
+#gameOverWindow h3{ 
+    text-align: center;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    color: #fff;
+}
+.goButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
