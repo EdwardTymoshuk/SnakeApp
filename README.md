@@ -1,2 +1,2 @@
 # Snake
-Snake app
+Simple snake game made with vanila js 
